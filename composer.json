@@ -1,0 +1,18 @@
+{
+    "name": "aika/editor",
+    "description": "Visual Editor",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Aika\\Editor\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Donatien Kamary",
+            "email": "donatkamary@gmail.com"
+        }
+    ],
+    "require": {}
+}

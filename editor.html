@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <link rel="stylesheet" href="public/css/editor.css">
+</head>
+<body>
+
+    <div class="editor">
+        [
+            {
+                type: "container",
+                id: "header",
+                class: "wrapper",
+                columns: [
+                    {
+                        size: "1/1",
+                        content: [
+                            {
+                                type: "header",
+                                level: 1,
+                                text: "Hello world",
+                                style: {
+                                    color: "navy",
+                                    "font-weight": "bolder",
+                                    "text-transform": "uppercase",
+                                }
+                            },
+                            {
+                                type: "line",
+                                color: "#EFEFEF",
+                                style: {
+                                    "margin-top": "0.3rem",
+                                    "margin-bottom": "1rem"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                type: "container",
+                style: {
+                    "margin-top": "2rem"
+                },
+                columns: [
+                    {
+                        size: "1/2",
+                        "size-mobile": "1/1",
+                        "v-alignment": "middle",
+                        "h-alignment": "center"
+                        content: [
+                            {
+                                type: "image",
+                                src: "https://fakeimg.pl/250x100/"
+                            }
+                        ]
+                    },
+                    {
+                        size: "1/2",
+                        "size-mobile": "1/2",
+                        "v-alignment": "middle",
+                        "h-alignment": "center"
+                        content: [
+                            {
+                                type: "header",
+                                level: 2,
+                                text: "Lorem Ipsum",
+                                style: {
+                                    color: "navy",
+                                    "font-weight": "bold",
+                                    "text-transform": "uppercase",
+                                }
+                            },
+                            {
+                                type: "paragraph",
+                                text: "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sed unde ex aut commodi, tenetur similique ipsam earum distinctio eligendi nihil enim ab totam reiciendis natus quia molestias qui sunt.</p>"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <div class="editor my-editor" id="editor-99" data-id="99">
+        <section class="the-editor">
+            <header></header>
+            <main>
+
+                <div class="container">
+                    <div class="block-header">
+                        <div class="block-name">Container</div>
+                        <div class="block-controls">
+                            <a href="#" class="remove-block">&times;</a>
+                        </div>
+                    </div>
+
+                    <div class="column size-12 properties">
+                        <div class="widget container">
+                            <div class="property"><span class="property-label">ID</span>: <span class="value attribut">header</span></div>
+                            <div class="property"><span class="property-label">Class</span>: <span class="value attribut">wrapper</span></div>
+                        </div>
+                    </div>
+
+                    <div class="column size-12">
+                        <div class="block-header">
+                            <div class="block-name">Column</div>
+                            <div class="block-controls">
+                                <a href="#" class="remove-block">&times;</a>
+                            </div>
+                        </div>
+
+                        <div class="widget header">
+                            <div class="block-header">
+                                <div class="block-name">Header</div>
+                                <div class="block-controls">
+                                    <a href="#" class="remove-block">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="column size-12 properties">
+                                <div class="property"><span class="property-label">Level</span>: <span class="value number">1</span></div>
+                                <div class="property"><span class="property-label">Text</span>: <span class="value text">Hello world</span></div>
+                                <div class="property"><span class="property-label">Style</span>: <span class="value style">color: navy; font-weight: bolder; text-transform: uppercase;</span></div>
+                            </div>
+                        </div>
+
+                        <div class="widget line">
+                            <div class="block-header">
+                                <div class="block-name">Line</div>
+                                <div class="block-controls">
+                                    <a href="#" class="remove-block">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="column size-12 properties">
+                                <div class="property"><span class="property-label">Color</span>: <span class="value color">#EFEFEF</span></div>
+                                <div class="property"><span class="property-label">Style</span>: <span class="value style">margin-top: 0.3rem, margin-bottom: 1rem;</span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="block-header">
+                        <div class="block-name">Container</div>
+                        <div class="block-controls">
+                            <a href="#" class="remove-block">&times;</a>
+                        </div>
+                    </div>
+
+                    <div class="column size-12 properties">
+                        <div class="widget container">
+                            <div class="property"><span class="property-label">Style</span>: <span class="value style">margin-top: 2rem;</span></div>
+                        </div>
+                    </div>
+
+                    <div class="column size-6">
+                        <div class="block-header">
+                            <div class="block-name">Column</div>
+                            <div class="block-controls">
+                                <a href="#" class="remove-block">&times;</a>
+                            </div>
+                        </div>
+
+                        <div class="widget column properties">
+                            <div class="property"><span class="property-label">Vertical Alignment</span>: <span class="value attribut">Middle</span></div>
+                            <div class="property"><span class="property-label">Horizontal Alignment</span>: <span class="value attribut">Center</span></div>
+                        </div>
+
+                        <div class="widget image">
+                            <div class="block-header">
+                                <div class="block-name">Image</div>
+                                <div class="block-controls">
+                                    <a href="#" class="remove-block">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="property"><span class="property-label">Source</span>: <span class="value image">https://fakeimg.pl/250x100/</span></div>
+                        </div>
+
+                    </div>
+
+                    <div class="column size-6">
+                        <div class="block-header">
+                            <div class="block-name">Column</div>
+                            <div class="block-controls">
+                                <a href="#" class="remove-block">&times;</a>
+                            </div>
+                        </div>
+
+                        <div class="widget column properties">
+                            <div class="property"><span class="property-label">Vertical Alignment</span>: <span class="value attribut">Middle</span></div>
+                            <div class="property"><span class="property-label">Horizontal Alignment</span>: <span class="value attribut">Center</span></div>
+                        </div>
+
+                        <div class="widget header">
+                            <div class="block-header">
+                                <div class="block-name">Header</div>
+                                <div class="block-controls">
+                                    <a href="#" class="remove-block">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="widget column properties">
+                                <div class="property"><span class="property-label">Level</span>: <span class="value number">2</span></div>
+                                <div class="property"><span class="property-label">Text</span>: <span class="value text">Lorem Ipsum</span></div>
+                                <div class="property"><span class="property-label">Style</span>: <span class="value style">color: navy; font-weight: bolder; text-transform: uppercase;</span></div>
+                            </div>
+                        </div>
+
+                        <div class="widget text">
+                            <div class="block-header">
+                                <div class="block-name">Text</div>
+                                <div class="block-controls">
+                                    <a href="#" class="remove-block">&times;</a>
+                                </div>
+                            </div>
+
+                            <div class="widget column properties">
+                                <div class="property"><span class="property-label">Text</span>: <span class="value text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sed unde ex aut commodi, tenetur similique ipsam earum distinctio eligendi nihil enim ab totam reiciendis natus quia molestias qui sunt.</p></span></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </main>
+            <footer></footer>
+        </section>
+    </div>
+
+    <script src="public/js/editor.js"></script>
+</body>
+</html>

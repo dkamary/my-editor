@@ -1,0 +1,173 @@
+/* Editor */
+
+.my-editor {
+    --primary: #16225b;
+    --properties: #007718;
+    --spacing: 16px;
+    --weight-label: 500;
+    --weight-value: 600;
+}
+
+.my-editor,
+.my-editor * {
+    box-sizing: border-box;
+}
+
+.my-editor,
+.the-editor {
+    display: block;
+}
+
+.the-editor header,
+.the-editor main,
+.the-editor footer {
+    display: block;
+    width: 100%;
+}
+
+.the-editor .container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border: dashed 1px var(--primary);
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+
+.the-editor .block-header {
+    background-color: var(--properties);
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex: 1 0 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.the-editor .block-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.the-editor .block-header .block-name,
+.the-editor .block-header .block-controls {
+    margin-left: var(--spacing);
+    margin-right: var(--spacing);
+    padding-top: calc(var(--spacing) * 0.5);
+    padding-bottom: calc(var(--spacing) * 0.5);
+}
+
+.block-controls .remove-block {
+    font-size: 1.5rem;
+}
+
+.the-editor .size-1 {
+    flex: 0 0 8.33333%;
+    max-width:  8.33333%;
+}
+
+.the-editor .size-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.the-editor .size-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.the-editor .size-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.the-editor .size-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.the-editor .size-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.the-editor .size-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.the-editor .size-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.the-editor .size-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.the-editor .size-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.the-editor .size-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.the-editor .size-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.properties .widget.container {
+    border: none;
+    margin-top: 0;
+}
+
+.properties .property {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding-left: calc(var(--spacing) * 1.5);
+}
+
+.property .property-label {
+    font-weight: var(--weight-label);
+    text-decoration: underline;
+}
+
+.property .value {
+    font-weight: var(--weight-value);
+    font-style: italic;
+}
+
+.value.attribut {
+    font-weight: bolder;
+}
+
+.value.number {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.value.text {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.value.style {
+    font-weight: lighter;
+}
+
+.widget {
+    margin: calc(var(--spacing) * 0.5);
+    border: dashed 1px gray;
+}
+
+/* .the-editor .column {
+    flex: 0 0 95%;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+} */
